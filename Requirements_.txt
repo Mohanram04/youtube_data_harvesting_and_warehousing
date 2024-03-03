@@ -1,0 +1,30 @@
+Prerequisites
+
+Before using this application, make sure you have the following:
+  Python 3.x installed on your system.
+  Required Python packages installed (specified in the code).
+  YouTube Data API key (replace api_key in the code with your own API key).
+  MongoDB 
+  SQL Database
+
+Python Packages:
+    pip install streamlit
+    pip install google-api-python-client
+    pip install pandas
+    pip install pymongo
+    pip install psycopg2
+    pip install isodate
+
+Importing the following  python packages
+    from site import execsitecustomize
+    import statistics
+    from turtle import bgcolor, color, width
+    from urllib.error import HTTPError
+    import pandas as pd
+    from googleapiclient.discovery import build
+    import pymongo
+    import time
+    import psycopg2
+    import streamlit as st
+    import isodate
+    import re
