@@ -11,7 +11,7 @@ import streamlit as st
 import isodate
 import re
 
-api_key = "AIzaSyAItchQggwSykRv-jaqRH0cJYJs6hr5hWk"
+api_key = "enter_your_api_key"
 api_service_name = "youtube"
 api_version = "v3"
 
