@@ -1,0 +1,21 @@
+Verbal summary of the implementation:
+*The code retrieves data from the YouTube Data API, stores it in a MongoDB database, and later transfers some of that data to a MySQL database for analysis.
+*Importing necessary libraries, including modules for working with Google's YouTube Data API, MongoDB, MySQL, and Streamlit for building web interfaces.
+*Setting up the YouTube Data API by providing an API key and specifying the API service and version.
+
+Defining functions for various tasks:
+ dropdownlist(): Creates a list of channel names for selection.
+duration(data): Converts video duration in ISO 8601 format to hours.
+get_channel_details(channel_id): Retrieves details about a YouTube channel using the API.
+get_playlist_details(playlist_id): Fetches video IDs from a channel's playlist ID.
+get_video_details(video_ids): Retrieves details of videos using their IDs.
+get_comment_details(video_ids): Gathers comments on videos.
+data_to_mongo(data): Stores channel, video, and comment details in a MongoDB database.
+retrieve(data): Retrieves data from MongoDB and inserts it into a MySQL database.
+analysis(data): Executes SQL queries and displays results in Streamlit.
+Setting up a Streamlit web application with sections for data collection, data conversion, and data analysis.
+
+Conclusion:
+In the data collection section, users can input a YouTube channel ID and click a button to retrieve data from the API, which is then stored in MongoDB.
+
+In the data conversion section, users can select a channel name from a dropdown list and click a button to transfer data from MongoDB to MySQL.
