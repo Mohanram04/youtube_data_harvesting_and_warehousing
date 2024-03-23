@@ -24,7 +24,7 @@ Importing the following  python packages
     from googleapiclient.discovery import build
     import pymongo
     import time
-    import psycopg2
+    import pymysql
     import streamlit as st
     import isodate
     import re
